@@ -1,12 +1,12 @@
-name: Hello World
+name: Hello Git
 
 on:
   schedule:
   - cron: "*/2 * * * *"
 
 jobs:
-  hello-world:
+  hello-git:
     runs-on: ubuntu-latest
     steps:
     - name: echo hello git every 2 min
-      run: echo "Hello Git ${date}"
+      run: echo "Hello Git $(date)"
